@@ -153,7 +153,7 @@ InitVram:
 
 
 ; Define sprites
-NumberOfSprites:	equ 2			;
+NumberOfSprites:	equ 4			;
 
 	ld	bc, 32 * NumberOfSprites	; Block length
 	ld	de, SpritePatternTable		; VRAM address

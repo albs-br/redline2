@@ -9,7 +9,7 @@ UpdateScreen:
     call BIOS_WRTVRM
 
     inc hl    
-    ld a, 0 ; pattern
+    ld a, (LeftObject_0 + Struct_Obj.pattern_0)
     call BIOS_WRTVRM
 
     inc hl    
@@ -27,7 +27,7 @@ UpdateScreen:
     call BIOS_WRTVRM
 
     inc hl    
-    ld a, 4 ; pattern
+    ld a, (LeftObject_0 + Struct_Obj.pattern_1)
     call BIOS_WRTVRM
 
     inc hl    

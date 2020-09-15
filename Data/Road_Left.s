@@ -1,6 +1,5 @@
 ObjectPositionLookupTable_Left:
-; one byte per value
-db 111         ; x coord for line 0
+db 111         ; size for line 0
 db 107         ; x coord for line 1
 db 103         ; x coord for line 2
 db 99         ; x coord for line 3
@@ -28,3 +27,12 @@ db 12         ; x coord for line 24
 db 8         ; x coord for line 25
 db 4         ; x coord for line 26
 db 0         ; x coord for line 27
+
+
+ObjectSizeLookupTable:
+
+db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0         ; size for lines 0-n
+db 8, 8, 8, 8, 8, 8, 8, 8, 8, 8         ; size for lines 0-n
+db 8, 8, 8, 8, 8, 8, 8, 8, 8, 8         ; size for lines 0-n
+db 0, 0, 0, 0, 0, 0, 0, 0, 0, 0         ; size for lines 0-n
+db 0, 0, 0, 0, 0, 0, 0, 0         ; size for lines 0-n

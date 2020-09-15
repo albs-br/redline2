@@ -1,8 +1,8 @@
 {
  Redline 2 (POC)
  https://github.com/albs-br/
- version (refer to data/strings.s)
- developed aug/2020-
+ version 0.0.1
+ developed set/2020-
  for MSX 1 computers
 
  File to be assembled by tniasm 0.45
