@@ -8,4 +8,7 @@ InitVariables:
     ; ld a, 0
     ; ld (LeftObject_0 + Struct_Obj.X), a
 
+    ld a, 0x80
+    ld (Speed), a
+
     ret

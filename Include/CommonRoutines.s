@@ -10,7 +10,7 @@
 ; Self explanatory
 Delay:
     ; ld c, 0x04                  ; 3 nested loops
-    ld d, 0x80
+    ; ld d, 0x10             ; 4 faster, 6 slower
     ld e, 0xff              
 .loop:                          ; 
     dec e

@@ -1,7 +1,7 @@
 {
  Redline 2 (POC)
  https://github.com/albs-br/
- version 0.0.1
+ version 0.0.2
  developed set/2020-
  for MSX 1 computers
 
@@ -60,10 +60,14 @@ MainLoop:
     ;Switch name tables
     ;vdp(2)=7			'7x1024 = 7168
     call SetNameTable_1
+    ld a, (Speed)
+    ld d, a
     call Delay
 
     ;vdp(2)=6			'6x1024 = 6144
     call SetNameTable_2
+    ld a, (Speed)
+    ld d, a
     call Delay
 
     call GameLogic

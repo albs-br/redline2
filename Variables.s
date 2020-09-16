@@ -2,7 +2,7 @@
 ; rw n  = reserve n words in RAM
 
     Counter:                    rw 1                        ; Global counter
-
+    Speed:                      rb 1
     
 ; Struct object:
 Struct_Obj_Size:                equ 6

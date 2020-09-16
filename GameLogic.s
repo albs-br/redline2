@@ -41,5 +41,16 @@ GameLogic:
     ld hl, Counter
     inc (hl)
 
+    ld a, (Speed)
+    cp 8
+    ret z
+    ;jp z, .noDecSpeed
+
+    ;ld a, 0x80
+
+    ;dec a
+    sub 4
+.noDecSpeed:
+    ld (Speed), a
 
     ret
